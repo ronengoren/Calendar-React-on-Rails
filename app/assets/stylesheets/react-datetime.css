@@ -13,26 +13,36 @@
   padding: 4px;
   margin-top: 1px;
   z-index: 99999 !important;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,.1);
-  border: 1px solid #f9f9f9;
+  background: #1db954;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.1);
+  border: 1px solid #1db954;
+  color: #191414;
 }
 .rdtOpen .rdtPicker {
   display: block;
+  color: #1db954;
+
+
   
 }
 .rdtStatic .rdtPicker {
   box-shadow: none;
   position: static;
+  color: #1db954;
+
 }
 
 .rdtPicker .rdtTimeToggle {
   text-align: center;
+  border-top: 1px solid #1db954;
+
 }
 
 .rdtPicker table {
   width: 100%;
   margin: 0;
+  color: #191414;
+
 }
 .rdtPicker td,
 .rdtPicker th {
@@ -47,12 +57,14 @@
 .rdtPicker td.rdtMinute:hover,
 .rdtPicker td.rdtSecond:hover,
 .rdtPicker .rdtTimeToggle:hover {
-  background: #eeeeee;
+  background: #191414;
+  color: #1db954;
   cursor: pointer;
 }
 .rdtPicker td.rdtOld,
 .rdtPicker td.rdtNew {
-  color: #999999;
+  color: #1db954;
+
 }
 .rdtPicker td.rdtToday {
   position: relative;
@@ -61,7 +73,7 @@
   content: '';
   display: inline-block;
   border-left: 7px solid transparent;
-  border-bottom: 7px solid #428bca;
+  border-bottom: 7px solid #191414;
   border-top-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 4px;
@@ -69,12 +81,13 @@
 }
 .rdtPicker td.rdtActive,
 .rdtPicker td.rdtActive:hover {
-  background-color: #428bca;
-  color: #fff;
+  background-color: #191414;
+  color: #1db954;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .rdtPicker td.rdtActive.rdtToday:before {
   border-bottom-color: #fff;
+  
 }
 .rdtPicker td.rdtDisabled,
 .rdtPicker td.rdtDisabled:hover {
@@ -93,7 +106,7 @@
   cursor: not-allowed;
 }
 .rdtPicker th {
-  border-bottom: 1px solid #f9f9f9;
+  border-bottom: 1px solid #191414;
 }
 .rdtPicker .dow {
   width: 4.2857%;
@@ -102,6 +115,8 @@
 }
 .rdtPicker th.rdtSwitch {
   width: 100px;
+  color: #191414;
+
 }
 .rdtPicker th.rdtNext,
 .rdtPicker th.rdtPrev {
@@ -130,7 +145,8 @@
   cursor: pointer;
 }
 .rdtPicker thead tr:first-child th:hover {
-  background: #eeeeee;
+  background-color: #191414;
+  color: #1db954;
 }
 
 .rdtPicker tfoot {
