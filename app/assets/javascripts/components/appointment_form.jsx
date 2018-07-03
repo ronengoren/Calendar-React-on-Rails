@@ -27,7 +27,7 @@ class AppointmentForm extends React.Component {
   
       return (
         <div>
-          <h2>Make a new appointment</h2>
+          <h2>Create New Event</h2>
           <form onSubmit={(event) => this.handleSubmit(event)}>
             <input name='title' placeholder='Appointment Title'
               value={this.props.input_title}

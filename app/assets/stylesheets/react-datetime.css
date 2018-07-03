@@ -2,13 +2,14 @@
  * https://github.com/YouCanBookMe/react-datetime
  */
 
+
  .rdt {
   position: relative;
 }
 .rdtPicker {
   display: none;
   position: absolute;
-  width: 250px;
+  /* width: 250px; */
   padding: 4px;
   margin-top: 1px;
   z-index: 99999 !important;
@@ -18,6 +19,7 @@
 }
 .rdtOpen .rdtPicker {
   display: block;
+  
 }
 .rdtStatic .rdtPicker {
   box-shadow: none;
@@ -94,7 +96,7 @@
   border-bottom: 1px solid #f9f9f9;
 }
 .rdtPicker .dow {
-  width: 14.2857%;
+  width: 4.2857%;
   border-bottom: none;
   cursor: default;
 }
