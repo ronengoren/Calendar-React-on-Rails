@@ -2,5 +2,7 @@
 %h1 PLAYDates
 
 
+#appointments_data{data: @appointments.to_json}
 
-= react_component('Appointments', appointments: @appointments)
+= stylesheet_pack_tag 'appointments'
+= javascript_pack_tag 'appointments'

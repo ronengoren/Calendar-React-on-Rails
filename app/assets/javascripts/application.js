@@ -16,8 +16,7 @@
 // require react
 // require react_ujs
 // require moment
-// require react-datetime.min
-//= require components
+// require components
 
 //= require rails-ujs
 //= require activestorage
