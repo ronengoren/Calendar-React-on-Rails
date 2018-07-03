@@ -1,10 +1,17 @@
+import React from 'react';
+import AppointmentForm from './appointment_form';
+import { AppointmentsList } from './appointments_list';
+import update from 'immutability-helper';
+import formErrors from './formErrors';
+
 class Appointments extends React.Component {
     constructor (props) {
       super(props)
       this.state = {
         appointments: this.props.appointments,
         title: '',
-        appt_time: ''
+        appt_time: '',
+        formErrors: {}
       }
     }
   
@@ -18,6 +25,10 @@ class Appointments extends React.Component {
               {appointment: appointment})
             .done((data) => {
               this.addNewAppointment(data);
+            })
+            .fail((response) => {
+                console.log(response)
+                this.setState({formErrors: response.responseJSON})
             });
     }
   
@@ -33,11 +44,12 @@ class Appointments extends React.Component {
     render () {
       return (
         <div>
+            <formErrors formErrors = {this.state.formErrors} />
           <AppointmentForm input_title={this.state.title}
             input_appt_time={this.state.appt_time}
             onUserInput={(obj) => this.handleUserInput(obj)}
             onFormSubmit={() => this.handleFormSubmit()} />
-        
+
           <AppointmentsList appointments={this.state.appointments} />
         </div>
       )
